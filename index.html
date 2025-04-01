@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="./images/check2-square.svg">
+        <h3>To-Do List</h3>
+        <button class="light mode"><img src="./images/brightness-high-fill.svg"></button>
+        <button class="dark mode"><img src="./images/moon-stars.svg"></button>
+    </div>
+    <div class="div-container">
+        <div class="intro">
+            <p>Stay organized and boost your productivity by keeping track of your tasks.
+                 Add new tasks, mark them as completed, and stay on top of your goals!</p>
+        </div>
+       <div class="container">
+           <h2>To-Do List</h2>
+           <input type="text" id="taskInput" placeholder="Add a new task...">
+           <button onclick="addTask()" class="add">Add</button>
+           <ul id="taskList"></ul>
+       </div>
+    </div>
+    <div class="hello">
+       <h1>✨ Stay focused, stay productive! ✨</h1>
+    </div>
+   <script src="./script.js"></script>
+</body>
+</html>

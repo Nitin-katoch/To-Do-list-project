@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+}
+
+.div-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+p{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.intro{
+    background: white;
+    padding: 20px;
+    width: 550px;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    background-color: #F5F5F5;
+    padding: 15px;
+    box-shadow: 0px 0px 2px ;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.hello{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.logo{
+    height: 30px;
+    margin-left: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.add {
+    padding: 8px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.mode{
+    border: none;
+    margin: 10px;
+}
+
+.light{
+    margin-left: auto;
+}
+
+
+.dark-mode, 
+.dark-mode div{
+    background-color: #121212; 
+    color: #ffffff;
+}
+
+.dark-mode input,
+.dark-mode .add {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+
+
+.dark-mode li {
+    background-color: #222;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.dark-mode .completed {
+    color: #888;
+}
+
+.dark-mode img{
+   filter: drop-shadow(3px 5px 10px white);
+}
+
+.dark-mode .mode{
+    background-color: #121212;
+}
+
+@media (max-width: 500px){
+      .div-container{
+        display: block;
+        margin-top: 10px;
+      }
+
+      .intro{
+        width: 80%;
+        margin: auto;
+      }
+
+      .container{
+        width: 80%;
+        margin: auto;
+      }
+
+      p{
+        font-size: 15px;
+      }
+
+      h3{
+        font-size: 15px;
+      }
+
+      img{
+        height: 15px;
+      }
+
+      .logo{
+        height: 15px;
+      }
+
+      .header{
+        height: 20px;
+      }
+
+      .hello{
+        font-size: 10px;
+        margin-top: 20px;
+      }
+}
